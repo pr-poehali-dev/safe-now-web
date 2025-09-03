@@ -18,7 +18,7 @@ const tariffData = [
   { name: 'Elite', value: 10, price: '8 000 ₽' },
 ];
 
-const COLORS = ['#1E3A8A', '#3B82F6', '#60A5FA', '#93C5FD'];
+const COLORS = ['#FF4500', '#FF6B35', '#FF8F65', '#FFB396'];
 
 const investmentData = [
   { category: 'Разработка платформы', amount: 20 },
@@ -35,7 +35,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-primary to-blue-600 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-primary to-orange-600 text-white">
         <div className="absolute inset-0 opacity-10">
           <div className="w-full h-full" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -49,12 +49,12 @@ export default function Index() {
                 <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                   Safe Now
                 </h1>
-                <p className="text-xl lg:text-2xl text-blue-100">
+                <p className="text-xl lg:text-2xl text-orange-100">
                   Персональная безопасность как вызов такси
                 </p>
               </div>
               
-              <p className="text-lg text-blue-50 leading-relaxed">
+              <p className="text-lg text-orange-50 leading-relaxed">
                 Мобильный сервис персональной безопасности, который делает охрану 
                 такой же доступной, как вызов такси. Революционное решение для рынка 
                 охранных услуг в 400+ млрд ₽.
@@ -80,18 +80,18 @@ export default function Index() {
                 </Button>
               </div>
 
-              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-blue-400">
+              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-orange-400">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">400+</div>
-                  <div className="text-blue-100">млрд ₽ рынок</div>
+                  <div className="text-orange-100">млрд ₽ рынок</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">5-10</div>
-                  <div className="text-blue-100">минут прибытие</div>
+                  <div className="text-orange-100">минут прибытие</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white">12-18</div>
-                  <div className="text-blue-100">мес. окупаемость</div>
+                  <div className="text-orange-100">мес. окупаемость</div>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function Index() {
             <div className="relative animate-scale-in">
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
                 <img 
-                  src="/img/ef95a8f1-6526-4a6f-b0d8-8f50e1502b52.jpg" 
+                  src="https://cdn.poehali.dev/files/273d2bbf-2169-4b21-8165-f2ebeafa4ffb.png" 
                   alt="Safe Now App Interface" 
                   className="w-full h-auto rounded-2xl"
                 />
@@ -167,7 +167,7 @@ export default function Index() {
                     <YAxis />
                     <Tooltip />
                     <Line type="monotone" dataKey="revenue" stroke="#1E3A8A" strokeWidth={3} name="Выручка (млн ₽)" />
-                    <Line type="monotone" dataKey="clients" stroke="#DC2626" strokeWidth={3} name="Клиенты" />
+                    <Line type="monotone" dataKey="clients" stroke="#FF0000" strokeWidth={3} name="Клиенты" />
                   </LineChart>
                 </ResponsiveContainer>
                 <p className="text-sm text-gray-600 mt-4">План первого года: 10,000 клиентов, выручка 180 млн ₽</p>
@@ -257,7 +257,7 @@ export default function Index() {
                   <XAxis dataKey="category" />
                   <YAxis />
                   <Tooltip formatter={(value) => [`${value} млн ₽`, 'Сумма']} />
-                  <Bar dataKey="amount" fill="#1E3A8A" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="amount" fill="#FF4500" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>
